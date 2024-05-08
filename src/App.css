@@ -21,6 +21,19 @@ body{
   background-color: var(--main-bg-color);
 }
 
+h1, h2, h3,p {
+  color: var(--font-color);
+}
+
+h1,h2{
+  font-family: var(--font-aldrich);
+}
+p{
+  font-family: var(--font-noto);
+  font-size: 14px;
+  line-height: 25px;
+}
+
 /* container & aside(NavBar) */
 
 .container{
@@ -65,6 +78,7 @@ padding: 40px 20px 40px 20px;
   display: flex;
   border: none;
   color: var(--font-color);
+  font-family: var(--font-noto);
   gap: 8px;
   border-radius: 8px;
   background-color: transparent;
@@ -95,11 +109,9 @@ padding: 40px 20px 40px 20px;
   align-items: center;
   gap: 20px;
 }
-.landingPage h2, p {
-  color: var(--font-color);
-}
+
+
 .landingPage h2{
-  font-family: var(--font-aldrich);
   font-size: 20px;
 }
 .landingParagraph{
@@ -170,4 +182,118 @@ padding: 40px 20px 40px 20px;
   border-radius: 3px;
   color: var(--font-color);
   background-color: var(--boxes-color);
+}
+
+/* About me */
+
+.aboutMe{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+
+.aboutMeInfo{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--section-color);
+  padding: 40px 40px 67px 40px;
+  gap: 20px;
+}
+
+.aboutMeInfo img{
+  width: 180px;
+  border-radius: 100%;
+}
+.aboutMeInfo h1{
+  font-size: 20px;
+}
+
+.aboutMeFilterButtons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.aboutMeFilterButtons button{
+  background-color: transparent;
+  font-family: var(--font-aldrich);
+  font-size: 12px;
+  border: 1.5px solid var(--boxes-color);
+  padding: 3px 16px 3px 16px;
+  color: var(--font-color);
+  border-radius: 100px;
+  line-height: 25px;
+  &:hover{
+    background-color: var(--hover-selector);
+  }
+}
+
+.aboutMeEducation{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.aboutMeEducationOne {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--section-color);
+  padding: 40px;
+}
+
+.aboutMeEducationOneContent{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+span{
+  border-right: 1.5px solid var(--font-color);
+  border-left: 1.5px solid var(--font-color);
+  padding: 0 8px;
+  margin: 0 8px;
+}
+
+.aboutMeEducationOneTitle{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+.aboutMeEducationOneTitle h3{
+  font-family: var(--font-noto);
+  font-weight: bolder;
+}
+
+/* Knowledge & Software */
+
+.KyS{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.knowledge, .software{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+  background-color: var(--section-color);
+}
+
+.knowledgeList, .softwareList{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+
+}
+
+.knowledgeList img, .softwareList img{
+ width: 24px;
 }
