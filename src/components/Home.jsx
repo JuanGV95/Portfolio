@@ -1,6 +1,7 @@
+
 export const Home = () =>{
     return (
-        <section className="landingPage">
+        <section id="home" className="landingPage">
           
           <article className="landingName">
             <h1>JUAN DAVID GONZÁLEZ</h1>
@@ -28,13 +29,13 @@ export const Home = () =>{
           </article>
           
           <article className="landingMedias">
-            <a href="">
+            <a href="https://github.com/JuanGV95" target="_blank">
               <img src="./img/gitLogo.svg" alt="logo de github" />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/juan-david-gonz%C3%A1lez/" target="_blank">
               <img src="./img/inLogo.svg" alt="logo de linkedin" />
             </a>
-            <button>Decargar CV</button>
+            <button >Decargar CV</button>
           </article>
         </section>
     )

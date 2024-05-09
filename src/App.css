@@ -6,9 +6,10 @@
   --font-color: #f5f5f5;
   --section-color: #171717;
   --boxes-color: #F05454;
-  --hover-selector: #F054540D;
+  --hover-selector: #F054541A;
   --font-noto: "Noto Sans", sans-serif;
   --font-aldrich: "Aldrich", sans-serif;
+  --ancho-pantalla: 80vw;
 }
 
 * {
@@ -26,6 +27,7 @@ h1, h2, h3,p {
 }
 
 h1,h2{
+  letter-spacing: 3px;
   font-family: var(--font-aldrich);
 }
 p{
@@ -39,13 +41,14 @@ p{
 .container{
   display: flex;
   width: 100%;
-  height: 100vh;
 }
 
 .aside{
   display: flex;
-  width: 261px;
   flex-direction: column;
+  width: 261px;
+  height: 100vh;
+  position: fixed;
   justify-content: space-between;
   background-color: var(--section-color);
   font-family: var(--font-noto);
@@ -96,18 +99,25 @@ padding: 40px 20px 40px 20px;
 /* Main content */
 .mainContent{
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  gap:100px;
   justify-content: center;
   align-items: center;
   padding: 60px;
+  padding-left: 324px;
+  border: 1px solid red;
+  
 }
 /* Landing */
 .landingPage {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  justify-content: center;
   align-items: center;
+  width: var(--ancho-pantalla);
+  height: 85vh;
   gap: 20px;
+
 }
 
 
@@ -136,12 +146,17 @@ padding: 40px 20px 40px 20px;
   font-size: 40px;
   font-family: var(--font-aldrich);
   color: var(--font-color);
+  
 }
-.landingName img:hover{
+
+
+.landingName img{
+transition: 0.5s ;
+&:hover{
   transform: translateY(-5px);
   transition: 0.5s ;
 }
-
+}
 .landingFilterButtons{
   display: flex;
   flex-direction: row;
@@ -156,8 +171,10 @@ padding: 40px 20px 40px 20px;
   color: var(--font-color);
   border-radius: 100px;
   line-height: 25px;
+  transition: 0.5s;
   &:hover{
     background-color: var(--hover-selector);
+    transition: 0.3s;
   }
 }
 .landingMedias {
@@ -173,15 +190,28 @@ padding: 40px 20px 40px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+  &:hover{
+    box-shadow: 0px 4px 29.7px 0px #F0545433;
+    transition: 0.5s;
+    transform: scale(1.05, 1.05);
+  }
 }
 .landingMedias button{
   width: 149px;
   height: 38px;
-  padding: 8px, 16px, 8px, 16px;
+  padding: 8px 16px 8px 16px;
   border: none;
-  border-radius: 3px;
+  border-radius: 100px;
   color: var(--font-color);
   background-color: var(--boxes-color);
+  font-family: var(--font-aldrich);
+  transition: 0.5s;
+  &:hover{
+    box-shadow: 0px 4px 29.7px 0px #F0545433;
+    transition: 0.5s;
+    transform: scale(1.05, 1.05);
+  }
 }
 
 /* About me */
@@ -189,16 +219,19 @@ padding: 40px 20px 40px 20px;
 .aboutMe{
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: var(--ancho-pantalla);
   gap: 20px;
+  height: 85vh;
+
 }
 
 .aboutMeInfo{
   display: flex;
-  width: 100%;
+  width: 45%;
   flex-direction: column;
   background-color: var(--section-color);
   padding: 40px 40px 67px 40px;
+  border-radius: 8px;
   gap: 20px;
 }
 
@@ -243,6 +276,7 @@ padding: 40px 20px 40px 20px;
   gap: 20px;
   background-color: var(--section-color);
   padding: 40px;
+  border-radius: 8px;
 }
 
 .aboutMeEducationOneContent{
@@ -275,6 +309,7 @@ span{
   display: flex;
   flex-direction: row;
   gap: 20px;
+  height: 100%;
 }
 
 .knowledge, .software{
@@ -284,6 +319,7 @@ span{
   padding: 40px;
   gap: 20px;
   background-color: var(--section-color);
+  border-radius: 8px;
 }
 
 .knowledgeList, .softwareList{
@@ -291,9 +327,16 @@ span{
   flex-direction: column;
   width: 100%;
   gap: 8px;
+  
 
 }
-
 .knowledgeList img, .softwareList img{
  width: 24px;
+}
+
+.center{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:8px;
 }
