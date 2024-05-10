@@ -1,7 +1,10 @@
 
+
 export const Home = () =>{
+
+
     return (
-        <section id="home" className="landingPage">
+        <section id="Home" className="landingPage">
           
           <article className="landingName">
             <h1>JUAN DAVID GONZÁLEZ</h1>

@@ -10,6 +10,7 @@
   --font-noto: "Noto Sans", sans-serif;
   --font-aldrich: "Aldrich", sans-serif;
   --ancho-pantalla: 80vw;
+  --alto-pantalla: 85vh;
 }
 
 * {
@@ -18,8 +19,8 @@
 }
 
 body{
-  width: 100%;
   background-color: var(--main-bg-color);
+  
 }
 
 h1, h2, h3,p {
@@ -38,17 +39,25 @@ p{
 
 /* container & aside(NavBar) */
 
-.container{
+.contenedor{
   display: flex;
-  width: 100%;
+  width:  max-content;
+  padding: 60px;
+
 }
+
+/*::-webkit-scrollbar {
+  display: none;
+} */
 
 .aside{
   display: flex;
   flex-direction: column;
+  position: fixed;
   width: 261px;
   height: 100vh;
-  position: fixed;
+  top: 0;
+  left: 0;
   justify-content: space-between;
   background-color: var(--section-color);
   font-family: var(--font-noto);
@@ -71,7 +80,9 @@ padding: 40px 20px 40px 20px;
   padding: 0 0 0 10px;
   gap: 8px;
   color: var(--font-color);
+
 }
+
 .navegation a:hover{
     background-color: var(--hover-selector);
     color: var(--boxes-color);
@@ -97,17 +108,8 @@ padding: 40px 20px 40px 20px;
 }
 
 /* Main content */
-.mainContent{
-  display: flex;
-  flex-direction: row;
-  gap:100px;
-  justify-content: center;
-  align-items: center;
-  padding: 60px;
-  padding-left: 324px;
-  border: 1px solid red;
-  
-}
+
+
 /* Landing */
 .landingPage {
   display: flex;
@@ -115,9 +117,11 @@ padding: 40px 20px 40px 20px;
   justify-content: center;
   align-items: center;
   width: var(--ancho-pantalla);
-  height: 85vh;
+  height: var(--alto-pantalla);
   gap: 20px;
-
+  padding-left: 261px;
+  margin-right: 60px;
+  scroll-snap-align: center;
 }
 
 
@@ -221,18 +225,19 @@ transition: 0.5s ;
   flex-direction: row;
   width: var(--ancho-pantalla);
   gap: 20px;
-  height: 85vh;
-
+  height: var(--alto-pantalla);
 }
 
 .aboutMeInfo{
   display: flex;
   width: 45%;
+
   flex-direction: column;
   background-color: var(--section-color);
   padding: 40px 40px 67px 40px;
   border-radius: 8px;
   gap: 20px;
+
 }
 
 .aboutMeInfo img{
@@ -268,6 +273,7 @@ transition: 0.5s ;
   flex-direction: column;
   width: 100%;
   gap: 20px;
+  height: 100%;
 }
 
 .aboutMeEducationOne {

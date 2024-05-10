@@ -1,6 +1,10 @@
+
+
 export const AboutMe = () =>{
+
+
     return (
-        <section  id="about" className="aboutMe">
+        <section id="AboutMe"  className="aboutMe">
           <article className="aboutMeInfo">
             <img src="./img/yo.jpeg" alt="imagen de mi persona" />
             <h1>Perfil</h1>
