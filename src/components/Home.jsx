@@ -38,7 +38,7 @@ export const Home = () =>{
             <a href="https://www.linkedin.com/in/juan-david-gonz%C3%A1lez/" target="_blank">
               <img src="./img/inLogo.svg" alt="logo de linkedin" />
             </a>
-            <button >Decargar CV</button>
+            <button className="buttons" >Decargar CV</button>
           </article>
         </section>
     )

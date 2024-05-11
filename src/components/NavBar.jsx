@@ -14,11 +14,11 @@ export const NavBar = () => {
           <img src="../img/iconMe.svg" alt="icono de perfil" />
           Sobre mi
         </a>
-        <a href="">
+        <a href="#">
           <img src="../img/iconFolder.svg" alt="icono de ficheros" />
           Mis proyectos
         </a>
-        <a href="">
+        <a href="#Contact">
           <img src="../img/iconMail.svg" alt="icono de contacto" />
           Contacto
         </a>

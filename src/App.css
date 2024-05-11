@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Noto+Sans:ital,wght@0,300;1,300&family=Righteous&family=Roboto:wght@100;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Noto+Sans:ital,wght@0,300;1,300&family=Righteous&family=Roboto:wght@100;300&display=swap");
 
-
-:root{
+:root {
   --main-bg-color: #121212;
   --font-color: #f5f5f5;
   --section-color: #171717;
-  --boxes-color: #F05454;
-  --hover-selector: #F054541A;
+  --boxes-color: #f05454;
+  --hover-selector: #f054541a;
   --font-noto: "Noto Sans", sans-serif;
   --font-aldrich: "Aldrich", sans-serif;
   --ancho-pantalla: 80vw;
@@ -18,39 +17,55 @@
   padding: 0;
 }
 
-body{
+body {
   background-color: var(--main-bg-color);
-  
 }
-
-h1, h2, h3,p {
+ /* common classes */
+h1,
+h2,
+h3,
+p {
   color: var(--font-color);
 }
 
-h1,h2{
+h1,
+h2 {
   letter-spacing: 3px;
   font-family: var(--font-aldrich);
 }
-p{
+p {
   font-family: var(--font-noto);
   font-size: 14px;
   line-height: 25px;
 }
 
+.buttons{
+  padding: 8px 16px 8px 16px;
+  border: none;
+  border-radius: 100px;
+  color: var(--font-color);
+  background-color: var(--boxes-color);
+  font-family: var(--font-aldrich);
+  transition: 0.5s;
+  &:hover {
+    box-shadow: 0px 4px 29.7px 0px #f0545433;
+    transition: 0.5s;
+    transform: scale(1.05, 1.05);
+  }
+}
+
 /* container & aside(NavBar) */
 
-.contenedor{
+.contenedor {
   display: flex;
-  width:  max-content;
-  padding: 60px;
-
+  width: max-content;
 }
 
 /*::-webkit-scrollbar {
   display: none;
 } */
 
-.aside{
+.aside {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -64,14 +79,14 @@ p{
   font-size: 14px;
 }
 
-.navegation{
-display: flex;
-flex-direction: column;
-width: 82%;
-padding: 40px 20px 40px 20px;
+.navegation {
+  display: flex;
+  flex-direction: column;
+  width: 82%;
+  padding: 40px 20px 40px 20px;
 }
 
-.navegation a{
+.navegation a {
   display: flex;
   text-decoration: none;
   align-items: center;
@@ -80,12 +95,11 @@ padding: 40px 20px 40px 20px;
   padding: 0 0 0 10px;
   gap: 8px;
   color: var(--font-color);
-
 }
 
-.navegation a:hover{
-    background-color: var(--hover-selector);
-    color: var(--boxes-color);
+.navegation a:hover {
+  background-color: var(--hover-selector);
+  color: var(--boxes-color);
 }
 
 .translateButton {
@@ -101,14 +115,13 @@ padding: 40px 20px 40px 20px;
   padding: 0 0 0 10px;
   width: 82%;
   height: 45px;
-  &:hover{
+  &:hover {
     background-color: var(--hover-selector);
     color: var(--boxes-color);
   }
 }
 
 /* Main content */
-
 
 /* Landing */
 .landingPage {
@@ -119,24 +132,23 @@ padding: 40px 20px 40px 20px;
   width: var(--ancho-pantalla);
   height: var(--alto-pantalla);
   gap: 20px;
+  padding: 60px;
   padding-left: 261px;
   margin-right: 60px;
   scroll-snap-align: center;
 }
 
-
-.landingPage h2{
+.landingPage h2 {
   font-size: 20px;
 }
-.landingParagraph{
+.landingParagraph {
   display: flex;
   justify-content: center;
   font-family: var(--font-noto);
   font-size: 14px;
   width: 100%;
-  
 }
-.landingParagraph p{
+.landingParagraph p {
   width: 69%;
   text-align: center;
 }
@@ -150,23 +162,21 @@ padding: 40px 20px 40px 20px;
   font-size: 40px;
   font-family: var(--font-aldrich);
   color: var(--font-color);
-  
 }
 
-
-.landingName img{
-transition: 0.5s ;
-&:hover{
-  transform: translateY(-5px);
-  transition: 0.5s ;
+.landingName img {
+  transition: 0.5s;
+  &:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+  }
 }
-}
-.landingFilterButtons{
+.landingFilterButtons {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-.landingFilterButtons button{
+.landingFilterButtons button {
   background-color: transparent;
   font-family: var(--font-aldrich);
   font-size: 12px;
@@ -176,7 +186,7 @@ transition: 0.5s ;
   border-radius: 100px;
   line-height: 25px;
   transition: 0.5s;
-  &:hover{
+  &:hover {
     background-color: var(--hover-selector);
     transition: 0.3s;
   }
@@ -190,45 +200,32 @@ transition: 0.5s ;
   gap: 20px;
   margin-top: 20px;
 }
-.landingMedias a{
+.landingMedias a {
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
-  &:hover{
-    box-shadow: 0px 4px 29.7px 0px #F0545433;
+  &:hover {
+    box-shadow: 0px 4px 29.7px 0px #f0545433;
     transition: 0.5s;
     transform: scale(1.05, 1.05);
   }
 }
-.landingMedias button{
-  width: 149px;
-  height: 38px;
-  padding: 8px 16px 8px 16px;
-  border: none;
-  border-radius: 100px;
-  color: var(--font-color);
-  background-color: var(--boxes-color);
-  font-family: var(--font-aldrich);
-  transition: 0.5s;
-  &:hover{
-    box-shadow: 0px 4px 29.7px 0px #F0545433;
-    transition: 0.5s;
-    transform: scale(1.05, 1.05);
-  }
-}
+
 
 /* About me */
 
-.aboutMe{
+.aboutMe {
   display: flex;
   flex-direction: row;
   width: var(--ancho-pantalla);
   gap: 20px;
   height: var(--alto-pantalla);
+  margin: 0 60px;
+  padding: 60px;
 }
 
-.aboutMeInfo{
+.aboutMeInfo {
   display: flex;
   width: 45%;
 
@@ -237,24 +234,23 @@ transition: 0.5s ;
   padding: 40px 40px 67px 40px;
   border-radius: 8px;
   gap: 20px;
-
 }
 
-.aboutMeInfo img{
+.aboutMeInfo img {
   width: 180px;
   border-radius: 100%;
 }
-.aboutMeInfo h1{
+.aboutMeInfo h1 {
   font-size: 20px;
 }
 
-.aboutMeFilterButtons{
+.aboutMeFilterButtons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
 }
-.aboutMeFilterButtons button{
+.aboutMeFilterButtons button {
   background-color: transparent;
   font-family: var(--font-aldrich);
   font-size: 12px;
@@ -263,12 +259,12 @@ transition: 0.5s ;
   color: var(--font-color);
   border-radius: 100px;
   line-height: 25px;
-  &:hover{
+  &:hover {
     background-color: var(--hover-selector);
   }
 }
 
-.aboutMeEducation{
+.aboutMeEducation {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -285,40 +281,41 @@ transition: 0.5s ;
   border-radius: 8px;
 }
 
-.aboutMeEducationOneContent{
+.aboutMeEducationOneContent {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 10px;
 }
 
-span{
+span {
   border-right: 1.5px solid var(--font-color);
   border-left: 1.5px solid var(--font-color);
   padding: 0 8px;
   margin: 0 8px;
 }
 
-.aboutMeEducationOneTitle{
+.aboutMeEducationOneTitle {
   display: flex;
   flex-direction: row;
   margin-bottom: 8px;
 }
-.aboutMeEducationOneTitle h3{
+.aboutMeEducationOneTitle h3 {
   font-family: var(--font-noto);
   font-weight: bolder;
 }
 
 /* Knowledge & Software */
 
-.KyS{
+.KyS {
   display: flex;
   flex-direction: row;
   gap: 20px;
   height: 100%;
 }
 
-.knowledge, .software{
+.knowledge,
+.software {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -328,21 +325,121 @@ span{
   border-radius: 8px;
 }
 
-.knowledgeList, .softwareList{
+.knowledgeList,
+.softwareList {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 8px;
-  
-
 }
-.knowledgeList img, .softwareList img{
- width: 24px;
+.knowledgeList img,
+.softwareList img {
+  width: 24px;
 }
 
-.center{
+.center {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap:8px;
+  gap: 8px;
 }
+
+/*Contact*/
+
+.contact {
+  width: var(--ancho-pantalla);
+  height: var(--alto-pantalla);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-image: url(./img/Mailbox.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding: 60px;
+}
+
+.contactLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: max-content;
+}
+
+.contactContent{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  gap: 20px;
+  font-family: var(--font-noto);
+  color: var(--font-color);
+  padding: 0 0 0 40px;
+}
+
+.form input,
+.form textarea {
+  width: 70%;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid var(--font-color);
+  border-radius: 4px;
+  padding: 4px 4px 0 16px;
+}
+
+.form textarea {
+  font-family: var(--font-noto);
+  color: var(--font-color);
+  max-width: 450px;
+  min-width: 250px;
+  max-height: 200px;
+  min-height: 100px;
+}
+
+.form button{
+  max-width: 143px;
+}
+
+.contactMethods {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.contactColumn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 15px;
+  
+  background-color: var(--section-color);
+  border-radius: 8px;
+}
+
+.contactRowContent h3{
+  font-family: var(--font-noto);
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 2%;
+}
+
+.contactRowContent p{
+  font-size: 14;
+  letter-spacing: 2%;
+}
+
+
+
