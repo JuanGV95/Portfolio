@@ -1,8 +1,6 @@
-
+import { CvDownload } from "../utils/DownloadCv"
 
 export const Home = () =>{
-
-
     return (
         <section id="Home" className="landingPage">
           
@@ -38,7 +36,7 @@ export const Home = () =>{
             <a href="https://www.linkedin.com/in/juan-david-gonz%C3%A1lez/" target="_blank">
               <img src="./img/inLogo.svg" alt="logo de linkedin" />
             </a>
-            <button className="buttons" >Decargar CV</button>
+            <button className="buttonDownload" onClick={CvDownload} >Decargar CV <img src="./img/down.svg" alt="imagen de descarga" /></button>
           </article>
         </section>
     )

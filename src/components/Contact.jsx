@@ -2,7 +2,7 @@ export const Conctact = () =>{
     return (
         <section id="Contact" className="contact">
           <div className="contactLabel">
-            <h1>Contactame</h1>
+            <h1>Contáctame</h1>
             <p>Si deseas contactarte conmigo, puedes escribirme a cualquiera de los medios que te muestro a continuación</p>
           </div>
           <aside className="contactContent">
