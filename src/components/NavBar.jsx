@@ -1,7 +1,33 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 
 export const NavBar = () => {
   const navegationRef = useRef(null);
+
+  useEffect(() => {
+    const handleNavClick = (e) => {
+      e.preventDefault();
+      const targetId = e.currentTarget.getAttribute('href').slice(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'start'
+        });
+      }
+    };
+
+    const links = navegationRef.current.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', handleNavClick);
+    });
+
+    return () => {
+      links.forEach(link => {
+        link.removeEventListener('click', handleNavClick);
+      });
+    };
+  }, []);
 
   return (
     <section className="aside">

@@ -39,6 +39,10 @@ p {
   line-height: 25px;
 }
 
+#Home, #AboutMe, #Projects, #Contact {
+  scroll-snap-align: start;
+}
+
 .buttons{
   padding: 8px 16px 8px 16px;
   border: none;
@@ -86,13 +90,13 @@ p {
 } */
 
 .aside {
-  display: flex;
-  flex-direction: column;
   position: fixed;
-  width: 261px;
-  height: 100vh;
   top: 0;
   left: 0;
+  height: 100vh;
+  width: 261px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background-color: var(--section-color);
   font-family: var(--font-noto);
@@ -154,7 +158,6 @@ p {
   gap: 20px;
   padding: 60px;
   padding-left: 261px;
-  margin-right: 60px;
   scroll-snap-align: center;
 }
 
@@ -243,6 +246,7 @@ p {
   height: var(--alto-pantalla);
   margin: 0 60px;
   padding: 60px;
+  padding-left: 321px;
 }
 
 .aboutMeInfo {
@@ -376,6 +380,7 @@ span {
   background-repeat: no-repeat;
   background-position: bottom right;
   padding: 60px;
+  padding-left: 321px;
 }
 
 .contactLabel {
@@ -477,6 +482,7 @@ span {
   height: var(--alto-pantalla);
   margin: 0 60px;
   padding: 60px;
+  padding-left: 321px;
 }
 
 .projectLabel{

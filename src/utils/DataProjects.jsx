@@ -9,19 +9,19 @@ export const dataProjects = [
         title: "GrindNation",
         description: "Aquí tiene que ir la descripción del proyecto",
         img: "/img/imagenPrueba.svg",
-        tags: ["HTML, CSS, JS"]
+        tags: ["HTML, CSS", "JS"]
         
     },
     { 
         title: "GrindNation",
         description: "Aquí tiene que ir la descripción del proyecto",
         img: "/img/imagenPrueba.svg",
-        tags: ["HTML, CSS, JS", "React"] 
+        tags: ["HTML, CSS", "JS", "React"] 
     },
     { 
         title: "GrindNation",
         description: "Aquí tiene que ir la descripción del proyecto",
         img: "/img/imagenPrueba.svg",
-        tags: ["HTML, CSS, JS", "React", "Node js", "Express", "Mongo DB"] 
+        tags: ["HTML, CSS", "JS", "React", "Backend", "Node js", "Express", "Mongo DB"] 
     }
-];
+]

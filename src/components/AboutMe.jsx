@@ -40,6 +40,16 @@ export const AboutMe = () =>{
                   </div>
                 </div>
               </div>
+              <div className="aboutMeEducationOneContent">
+                <img src="./img/circle.svg" alt="imagen de un circulo rojo" />
+                <div>
+                  <div className="aboutMeEducationOneTitle">
+                  <h3>Técnico en sistemas</h3>
+                  <p><span>Servicio nacional de aprendizaje SENA</span></p>
+                  <p>2012</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <article className="KyS">
               <div className="knowledge">
