@@ -85,9 +85,9 @@ p {
   width: max-content;
 }
 
-/*::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
-} */
+} 
 
 .aside {
   position: fixed;
@@ -575,3 +575,26 @@ option{
   transition: 0.5s;
 }
 
+
+/* Scrolling Arrow Guides */
+
+.prevButton,
+.nextButton {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}

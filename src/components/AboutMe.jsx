@@ -4,7 +4,7 @@ export const AboutMe = () =>{
 
 
     return (
-        <section id="AboutMe"  className="aboutMe">
+        <section id="AboutMe"  className="aboutMe" data-section="1">
           <article className="aboutMeInfo">
             <img src="./img/yo.jpeg" alt="imagen de mi persona" />
             <h1>Perfil</h1>

@@ -2,7 +2,7 @@ import { CvDownload } from "../utils/DownloadCv";
 
 export const Home = ({ onFilterChange }) => {
   return (
-    <section id="Home" className="landingPage">
+    <section id="Home" className="landingPage" data-section="0">
       <article className="landingName">
         <h1>JUAN DAVID GONZÁLEZ</h1>
         <img src="./img/quote.svg" alt="imagen de Quotes" />

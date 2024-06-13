@@ -60,7 +60,7 @@ export const Conctact = () =>{
   };
 
   return (
-    <section id="Contact" className="contact">
+    <section id="Contact" className="contact" data-section="3">
       <div className="contactLabel">
         <h1>Contáctame</h1>
         <p>Si deseas contactarte conmigo, puedes escribirme a cualquiera de los medios que te muestro a continuación</p>

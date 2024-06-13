@@ -15,7 +15,7 @@ export const Projects = ({ filter, onFilterChange }) => {
   });
 
   return (
-    <section id="Projects" className="projects">
+    <section id="Projects" className="projects" data-section="2">
       <aside className="projectLabel">
         <h1>Mis Proyectos</h1>
         <div className="filterOptions">
@@ -29,7 +29,7 @@ export const Projects = ({ filter, onFilterChange }) => {
           >
             <option value="Todos">Todos</option>
             <option value="HTML, CSS">HTML, CSS</option>
-            <option value="JavaScript">JavaScript</option>
+            <option value="JS">JavaScript</option>
             <option value="React">React js</option>
             <option value="Backend">Backend</option>
           </select>
