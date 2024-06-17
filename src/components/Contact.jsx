@@ -3,7 +3,7 @@ import axios from 'axios';
 import Swal from 'sweetalert2'
 
 
-export const Conctact = () =>{
+export const Contact = () =>{
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -74,7 +74,7 @@ export const Conctact = () =>{
             placeholder="Escribe tu nombre completo"
             value={formData.name}
             onChange={handleChange}
-            required="true"
+            required={true}
           />
           <label>Correo</label>
           <input
@@ -83,7 +83,7 @@ export const Conctact = () =>{
             placeholder="Escribe tu correo electrónico"
             value={formData.email}
             onChange={handleChange}
-            required="true"
+            required={true}
           />
           <label>Asunto</label>
           <input
@@ -92,7 +92,7 @@ export const Conctact = () =>{
             placeholder="Escribe la razón de tu mensaje"
             value={formData.subject}
             onChange={handleChange}
-            required="true"
+            required={true}
           />
           <label>Mensaje</label>
           <textarea
@@ -100,13 +100,13 @@ export const Conctact = () =>{
             placeholder="Escribe tu mensaje"
             value={formData.message}
             onChange={handleChange}
-            required="true"
+            required={true}
           ></textarea>
           <button className="buttons" type="submit">Enviar mensaje</button>
         </form>
         <aside className="contactMethods">
           <div className="contactColumn">
-          <div
+            <div
               className="contactRow"
               onClick={() => copyToClipboard('juandagv95@gmail.com')}
               style={{ cursor: 'pointer' }}
@@ -120,31 +120,29 @@ export const Conctact = () =>{
             <a href="https://wa.me/573188549815" target="_blank" rel="noopener noreferrer" className="contactRow">
               <img src="./img/what.svg" alt="" />
               <div className="contactRowContent">
-                  <h3>Whatsapp</h3>
-                  <p>
-                    +57 318 854 9815
-                  </p>
+                <h3>Whatsapp</h3>
+                <p>+57 318 854 9815</p>
               </div>
             </a>
-            </div>
-            <div className="contactColumn">
+          </div>
+          <div className="contactColumn">
             <a href="https://github.com/JuanGV95" target="_blank" rel="noopener noreferrer" className="contactRow">
               <img src="./img/github.svg" alt="" />
               <div className="contactRowContent">
-                  <h3>GitHub</h3>
-                  <p>JuanGV95</p>
+                <h3>GitHub</h3>
+                <p>JuanGV95</p>
               </div>
             </a>
             <a href="https://www.linkedin.com/in/juan-david-gonzález" target="_blank" rel="noopener noreferrer" className="contactRow">
               <img src="./img/in.svg" alt="" />
               <div className="contactRowContent">
-                  <h3>LinkedIn</h3>
-                  <p>juan-david-gonzalez</p>
+                <h3>LinkedIn</h3>
+                <p>juan-david-gonzalez</p>
               </div>
             </a>
-            </div>
-          </aside>
+          </div>
         </aside>
-      </section>
-    );
+      </aside>
+    </section>
+  );
 };

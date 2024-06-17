@@ -1,9 +1,16 @@
 import { dataProjects } from "../utils/DataProjects";
 import { Project } from "./Project";
+import { useNavigate } from 'react-router-dom';
 
 export const Projects = ({ filter, onFilterChange }) => {
+  const navigate = useNavigate();
+
   const handleFilterChange = (e) => {
     onFilterChange(e.target.value);
+  };
+
+  const handleProjectClick = (projectId) => {
+    navigate(`/project/${projectId}`);
   };
 
   const filteredProjects = dataProjects.filter((project) => {
@@ -37,13 +44,14 @@ export const Projects = ({ filter, onFilterChange }) => {
       </aside>
       <section className="projectsContainer">
         {filteredProjects.map((project, index) => (
-          <Project
-            key={index}
-            title={project.title}
-            description={project.description}
-            img={project.img}
-            tags={project.tags}
-          />
+          <div key={index} onClick={() => handleProjectClick(project.id)}>
+            <Project
+              title={project.title}
+              description={project.description}
+              img={project.img}
+              tags={project.tags}
+            />
+          </div>
         ))}
       </section>
     </section>

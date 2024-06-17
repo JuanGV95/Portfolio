@@ -533,6 +533,7 @@ option{
 
 .projectsContent img{
   border-radius: 20px 20px 0 0;
+  width: 334px;
 }
 
 .projectsResume {
@@ -583,12 +584,17 @@ option{
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #f00;
+  background-color: var(--boxes-color);
   color: #fff;
   border: none;
-  padding: 10px;
+  padding: 16px;
+  border-radius: 8px;
   cursor: pointer;
   z-index: 1000;
+  &:hover{
+    box-shadow: 0px 4px 29.7px 0px #F0545433;
+
+  }
 }
 
 .prevButton {
@@ -598,3 +604,91 @@ option{
 .nextButton {
   right: 10px;
 }
+
+/* Project Datail Page */
+
+.detailContainer{
+  display: flex;
+  flex-direction: column;
+  width: var(--ancho-pantalla);
+  gap: 20px;
+  height: var(--alto-pantalla);
+  padding: 60px;
+  padding-left: 321px;
+}
+
+.detailContainer button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  background-color: transparent;
+  border: none;
+  font-family: var(--font-noto);
+  gap: 8px;
+  font-size: 16px;
+  color: var(--font-color);
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.detailContent{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.detailContent h1{
+  font-size: 25px;
+  line-height: 24.45px;
+  letter-spacing: 10%;
+  font-family: var(--font-aldrich);
+}
+
+.detailSections{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.detailDescription{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.detailDescription a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: fit-content; 
+  height: 40px;
+  padding: 0 16px 0 24px;
+  gap: 8px;
+  border-radius: 3px;
+  background: var(--boxes-color);
+  color: var(--font-color);
+  font-family: var(--font-aldrich);
+}
+
+.tagsDetail{ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.tagsDetails{ 
+  border: none;
+  color: var(--font-color);
+  font-family: var(--font-noto);
+  background: #F0545433;
+  border-radius: 50px;
+  padding: 5px 16px 5px 16px;
+  gap: 10px;
+}
+
+

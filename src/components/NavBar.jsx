@@ -1,20 +1,25 @@
 import { useRef, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 export const NavBar = () => {
   const navegationRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleNavClick = (e) => {
       e.preventDefault();
       const targetId = e.currentTarget.getAttribute('href').slice(1);
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-          inline: 'start'
-        });
-      }
+      navigate(`/#${targetId}`);
+      setTimeout(() => {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'start'
+          });
+        }
+      }, 100);
     };
 
     const links = navegationRef.current.querySelectorAll('a');
@@ -27,7 +32,7 @@ export const NavBar = () => {
         link.removeEventListener('click', handleNavClick);
       });
     };
-  }, []);
+  }, [navigate]);
 
   return (
     <section className="aside">
