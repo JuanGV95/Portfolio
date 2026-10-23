@@ -68,7 +68,7 @@ select option{background:#161616}
 .card{position:relative;display:flex;flex-direction:column;background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:22px;overflow:hidden;transition:border-color .2s,transform .2s}
 .card:hover{border-color:var(--red);transform:translateY(-3px)}
 .card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
-.card div{padding:1.4rem;display:flex;flex-direction:column;gap:.8rem;flex:1}
+.card>div{padding:1.4rem;display:flex;flex-direction:column;gap:.8rem;flex:1}
 .card h3{font-family:'Noto Sans';font-size:17px;font-weight:400}
 .card .tags{margin-top:auto;padding-top:.4rem}
 .card::after{content:attr(data-tip);position:absolute;left:var(--x,50%);top:var(--y,50%);transform:translate(12px,12px);background:var(--red);color:#fff;font-size:12px;padding:.2rem .7rem;border-radius:4px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .15s}
@@ -113,21 +113,14 @@ a.cc:hover{background:#222}
 @keyframes float{50%{transform:translateY(-8px)}}
 .rise{animation:rise .5s cubic-bezier(.2,.7,.2,1) backwards;animation-delay:calc(var(--n,0)*70ms)}
 .hero h2::after{content:"_";color:var(--red);margin-left:.2rem;animation:blink 1.1s steps(1) infinite}
-.hero h1 img{animation:float 4.5s ease-in-out infinite}
-.buzon{animation:float 7s ease-in-out infinite}
 .arrow svg,.btn svg,.back svg{transition:transform .2s}
 .arrow.next:hover svg,.btn:hover svg{transform:translateX(4px)}
 .arrow.prev:hover svg,.back:hover svg{transform:translateX(-4px)}
 .btn.dl:hover svg{transform:translateY(3px)}
-.tags .tag{transition:background .2s,transform .2s}
-.tags .tag:hover{background:var(--redbg);transform:translateY(-2px)}
 .card img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
 .card:hover img{transform:scale(1.06)}
 .cc img{transition:transform .25s}
 a.cc:hover img{transform:rotate(-8deg) scale(1.12)}
 a.cc{transition:background .2s,transform .2s}a.cc:hover{transform:translateY(-3px)}
-.dots li{transition:transform .2s}.dots li::before{transition:background .2s}
-.dots li:hover{transform:translateX(4px)}.dots li:hover::before{background:var(--red)}
-.soft img{transition:transform .25s}.soft li:hover img{transform:scale(1.2) rotate(-6deg)}
 .hero .actions>a:not(.btn) img{transition:transform .2s}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}

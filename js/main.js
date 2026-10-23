@@ -4,9 +4,8 @@
 const PROYECTOS = [
   {
     id: "twin-tides",
-    imagen: "assets/img/twin-tides.jpg",
+    imagen: "assets/img/TwinTides.png",
     tags: ["Unity 2D", "C#", "Pixelart"],
-    tagsCard: "Unity 2D, C#",
     url: "https://juandaara.itch.io/twin-tides", // enlace del botón "Ir al sitio" ("" lo oculta)
     es: {
       titulo: "Twin Tides",
@@ -114,7 +113,7 @@ const vistas = {
       <a class="card" href="#/proyectos/${p.id}" data-tip="${t().tip}">
         <img src="${p.imagen}" alt="${p[lang].titulo}" loading="lazy">
         <div><h3>${p[lang].titulo}</h3><p>${p[lang].resumen}</p>
-        <div class="tags" style="padding:0">${tags([p.tagsCard || p.tags.join(", ")])}</div></div>
+        <div class="tags" style="padding:0">${tags(p.tags)}</div></div>
       </a>`).join("") || `<p class="empty">${t().none}</p>`}</div>`;
   },
 
