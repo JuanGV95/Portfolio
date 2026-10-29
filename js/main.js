@@ -22,8 +22,32 @@ const PROYECTOS = [
       tema: "Signals",
       mecanica: "The core mechanic is finding signals hidden by different kinds of vision: signals on walls, on floors and invisible signals, depending on which vision is active.",
       creditos: ["Juan David Gonzalez", "Mariana Hernandez", "Angie Fonseca"]
-    }
-  }
+        }
+
+    },
+  {
+      id: "trick-or-loop",
+      imagen: "assets/img/TrickOrLoop.png",
+      tags: ["Unity 3D", "C#", "Blender", "Voxel art"],
+      url: "https://juandaara.itch.io/trick-or-loop", // enlace del botón "Ir al sitio" ("" lo oculta)
+      es: {
+          titulo: "Trick-Or-Loop",
+          resumen: "Juego de Halloween en primera persona hecho en una game jam de 48 horas. Fui Project Manager y diseñé y programé toda la interfaz y los menús.",
+          descripcion: "Un niño sale a pedir dulces la noche de Halloween y entra en un barrio donde un espantapájaros maldito controla el tiempo. La noche se repite una y otra vez, y solo reuniendo 3 dulces de las casas correctas podrá romper el loop y ver el amanecer.",
+          tema: "Halloween",
+          mecanica: "El jugador recorre un barrio circular de 8 casas y toca puertas que pueden dar un dulce, una pista o un susto. Las casas correctas cambian en cada partida. Mientras tanto debe saltar o esquivar troncos, lápidas y calabazas rodantes, y escapar del espantapájaros: si lo atrapa, la noche vuelve a empezar.",
+          creditos: ["Juan David Gonzalez", "Lina Alejandra Reina", "Gustavo Adolfo Parra", "Juan David Bustos"]
+      },
+      en: {
+          titulo: "Trick-Or-Loop",
+          resumen: "First-person Halloween game made in a 48-hour game jam. I was the Project Manager and designed and programmed the whole interface and menus.",
+          descripcion: "A kid goes trick-or-treating on Halloween night and wanders into a neighborhood where a cursed scarecrow controls time. The night repeats over and over, and only by collecting 3 candies from the right houses can he break the loop and see the sunrise.",
+          tema: "Halloween",
+          mecanica: "The player explores a circular neighborhood of 8 houses and knocks on doors that may give a candy, a clue or a scare. The right houses change every run. Meanwhile, he must jump over or dodge logs, tombstones and rolling pumpkins, and escape the scarecrow: if it catches him, the night starts over.",
+          creditos: ["Juan David Gonzalez", "Lina Alejandra Reina", "Gustavo Adolfo Parra", "Juan David Bustos"]
+      }
+
+    },
 ];
 const LINKS = {
   github: "https://github.com/JuanGV95",
