@@ -5,7 +5,7 @@ const PROYECTOS = [
     {
         id: "el-silbido-del-mohan",
         imagen: "assets/img/ElSilbidoDelMohan.png",
-        tags: ["Unity 2D", "C#", "Pixel art", "WebGL"],
+        tags: ["Unity 2D", "C#", "PixelArt", "WebGL"],
         url: "https://pokecris200.itch.io/el-silbido-del-mohan", // enlace del botón "Ir al sitio" ("" lo oculta)
         es: {
             titulo: "El Silbido del Mohán",
