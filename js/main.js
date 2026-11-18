@@ -2,6 +2,28 @@
    Para agregar un proyecto: copia un bloque de PROYECTOS y cambia sus datos.
    Los textos van en español (es) e inglés (en). El filtro se genera con los "tags". */
 const PROYECTOS = [
+    {
+        id: "el-silbido-del-mohan",
+        imagen: "assets/img/ElSilbidoDelMohan.png",
+        tags: ["Unity 2D", "C#", "Pixel art", "WebGL"],
+        url: "https://pokecris200.itch.io/el-silbido-del-mohan", // enlace del botón "Ir al sitio" ("" lo oculta)
+        es: {
+            titulo: "El Silbido del Mohán",
+            resumen: "Plataformero 2D de exploración en pixel art, inspirado en el mito colombiano del Mohán y hecho en una game jam. Estuve a cargo del arte y la interfaz: personajes, tilesets, escenarios, menús y HUD.",
+            descripcion: "Una noche cerrada en el río Magdalena, un pescador saca en su atarraya un extraño amuleto que lo arrastra hasta los dominios del Mohán. Para escapar y abrir el portal de regreso, deberá adentrarse en la ciénaga y arrebatarle al mito las ofrendas de chicha que los vivos le dejaron.",
+            tema: "Folclor colombiano",
+            mecanica: "Con el amuleto, el jugador cambia entre el mundo de los vivos y el reino espiritual del Mohán, donde aparecen plataformas, pasajes ocultos y peligros que no existen en el plano mortal. Cada visita al otro mundo tiene un tiempo límite: si se queda demasiado, queda atrapado. Debe explorar ambos planos para encontrar las vasijas de chicha, que cambian de lugar en cada partida, y llevarlas al altar para escapar.",
+            creditos: ["Daniel Esteban Ardila", "Oscar Celis", "Juan David Gonzalez", "Cristian Forero"]
+        },
+        en: {
+            titulo: "The Mohán's Whistle",
+            resumen: "2D pixel art exploration platformer inspired by the Colombian myth of El Mohán, made in a game jam. I was in charge of the art and interface: characters, tilesets, environments, menus and HUD.",
+            descripcion: "On a pitch-black night on the Magdalena River, a fisherman pulls a strange amulet out of his cast net and is dragged into El Mohán's domain. To escape and open the portal back home, he must venture into the swamp and steal the chicha offerings the living left for the myth.",
+            tema: "Colombian folklore",
+            mecanica: "Using the amulet, the player switches between the mortal world and El Mohán's spirit realm, where platforms, hidden passages and hazards appear that don't exist on the mortal plane. Each visit to the other world is time-limited: stay too long and he's trapped forever. He must explore both planes to find the chicha jars, which change location every run, and bring them to the altar to escape.",
+            creditos: ["Daniel Esteban Ardila", "Oscar Celis", "Juan David Gonzalez", "Cristian Forero"]
+        }
+    },
   {
     id: "twin-tides",
     imagen: "assets/img/TwinTides.png",
@@ -48,28 +70,7 @@ const PROYECTOS = [
       }
 
     },
-    {
-        id: "el-silbido-del-mohan",
-        imagen: "assets/img/ElSilbidoDelMohan.png",
-        tags: ["Unity 2D", "C#", "Pixel art", "WebGL"],
-        url: "https://pokecris200.itch.io/el-silbido-del-mohan", // enlace del botón "Ir al sitio" ("" lo oculta)
-        es: {
-            titulo: "El Silbido del Mohán",
-            resumen: "Plataformero 2D de exploración en pixel art, inspirado en el mito colombiano del Mohán y hecho en una game jam. Estuve a cargo del arte y la interfaz: personajes, tilesets, escenarios, menús y HUD.",
-            descripcion: "Una noche cerrada en el río Magdalena, un pescador saca en su atarraya un extraño amuleto que lo arrastra hasta los dominios del Mohán. Para escapar y abrir el portal de regreso, deberá adentrarse en la ciénaga y arrebatarle al mito las ofrendas de chicha que los vivos le dejaron.",
-            tema: "Folclor colombiano",
-            mecanica: "Con el amuleto, el jugador cambia entre el mundo de los vivos y el reino espiritual del Mohán, donde aparecen plataformas, pasajes ocultos y peligros que no existen en el plano mortal. Cada visita al otro mundo tiene un tiempo límite: si se queda demasiado, queda atrapado. Debe explorar ambos planos para encontrar las vasijas de chicha, que cambian de lugar en cada partida, y llevarlas al altar para escapar.",
-            creditos: ["Daniel Esteban Ardila", "Oscar Celis", "Juan David Gonzalez", "Cristian Forero"]
-        },
-        en: {
-            titulo: "The Mohán's Whistle",
-            resumen: "2D pixel art exploration platformer inspired by the Colombian myth of El Mohán, made in a game jam. I was in charge of the art and interface: characters, tilesets, environments, menus and HUD.",
-            descripcion: "On a pitch-black night on the Magdalena River, a fisherman pulls a strange amulet out of his cast net and is dragged into El Mohán's domain. To escape and open the portal back home, he must venture into the swamp and steal the chicha offerings the living left for the myth.",
-            tema: "Colombian folklore",
-            mecanica: "Using the amulet, the player switches between the mortal world and El Mohán's spirit realm, where platforms, hidden passages and hazards appear that don't exist on the mortal plane. Each visit to the other world is time-limited: stay too long and he's trapped forever. He must explore both planes to find the chicha jars, which change location every run, and bring them to the altar to escape.",
-            creditos: ["Daniel Esteban Ardila", "Oscar Celis", "Juan David Gonzalez", "Cristian Forero"]
-        }
-    },
+    
 ];
 const LINKS = {
   github: "https://github.com/JuanGV95",
