@@ -1,6 +1,7 @@
 /* ============ CONTENIDO EDITABLE ============
    Para agregar un proyecto: copia un bloque de PROYECTOS y cambia sus datos.
-   Los textos van en español (es) e inglés (en). El filtro se genera con los "tags". */
+   Los textos van en español (es) e inglés (en). El filtro se genera con los "tags".
+   "aporte" es la lista de lo que hiciste en el proyecto (se muestra en el detalle; si no existe, se oculta). */
 const PROYECTOS = [
     {
         id: "el-silbido-del-mohan",
@@ -13,6 +14,7 @@ const PROYECTOS = [
             descripcion: "Una noche cerrada en el río Magdalena, un pescador saca en su atarraya un extraño amuleto que lo arrastra hasta los dominios del Mohán. Para escapar y abrir el portal de regreso, deberá adentrarse en la ciénaga y arrebatarle al mito las ofrendas de chicha que los vivos le dejaron.",
             tema: "Folclor colombiano",
             mecanica: "Con el amuleto, el jugador cambia entre el mundo de los vivos y el reino espiritual del Mohán, donde aparecen plataformas, pasajes ocultos y peligros que no existen en el plano mortal. Cada visita al otro mundo tiene un tiempo límite: si se queda demasiado, queda atrapado. Debe explorar ambos planos para encontrar las vasijas de chicha, que cambian de lugar en cada partida, y llevarlas al altar para escapar.",
+            aporte: ["Diseñé todo el arte del juego: personajes, tilesets y escenarios en pixel art.", "Diseñé la interfaz (UI) y el HUD.", "Integré los menús principales en Unity."], // lo que hice en el proyecto
             creditos: ["Daniel Esteban Ardila", "Oscar Celis", "Juan David Gonzalez", "Cristian Forero"]
         },
         en: {
@@ -21,6 +23,7 @@ const PROYECTOS = [
             descripcion: "On a pitch-black night on the Magdalena River, a fisherman pulls a strange amulet out of his cast net and is dragged into El Mohán's domain. To escape and open the portal back home, he must venture into the swamp and steal the chicha offerings the living left for the myth.",
             tema: "Colombian folklore",
             mecanica: "Using the amulet, the player switches between the mortal world and El Mohán's spirit realm, where platforms, hidden passages and hazards appear that don't exist on the mortal plane. Each visit to the other world is time-limited: stay too long and he's trapped forever. He must explore both planes to find the chicha jars, which change location every run, and bring them to the altar to escape.",
+            aporte: ["Created all the game's art: characters, tilesets and environments in pixel art.", "Designed the interface (UI) and HUD.", "Integrated the main menus in Unity."], // lo que hice en el proyecto
             creditos: ["Daniel Esteban Ardila", "Oscar Celis", "Juan David Gonzalez", "Cristian Forero"]
         }
     },
@@ -35,6 +38,7 @@ const PROYECTOS = [
             descripcion: "Un niño sale a pedir dulces la noche de Halloween y entra en un barrio donde un espantapájaros maldito controla el tiempo. La noche se repite una y otra vez, y solo reuniendo 3 dulces de las casas correctas podrá romper el loop y ver el amanecer.",
             tema: "Halloween",
             mecanica: "El jugador recorre un barrio circular de 8 casas y toca puertas que pueden dar un dulce, una pista o un susto. Las casas correctas cambian en cada partida. Mientras tanto debe saltar o esquivar troncos, lápidas y calabazas rodantes, y escapar del espantapájaros: si lo atrapa, la noche vuelve a empezar.",
+            aporte: ["Diseñé y programé toda la UI: menú principal y pantallas del juego.", "Coordiné al equipo como Project Manager."], // lo que hice en el proyecto
             creditos: ["Juan David Gonzalez", "Lina Alejandra Reina", "Gustavo Adolfo Parra", "Juan David Bustos"]
         },
         en: {
@@ -43,6 +47,7 @@ const PROYECTOS = [
             descripcion: "A kid goes trick-or-treating on Halloween night and wanders into a neighborhood where a cursed scarecrow controls time. The night repeats over and over, and only by collecting 3 candies from the right houses can he break the loop and see the sunrise.",
             tema: "Halloween",
             mecanica: "The player explores a circular neighborhood of 8 houses and knocks on doors that may give a candy, a clue or a scare. The right houses change every run. Meanwhile, he must jump over or dodge logs, tombstones and rolling pumpkins, and escape the scarecrow: if it catches him, the night starts over.",
+            aporte: ["Designed and programmed the whole UI: main menu and game screens.", "Led the team as Project Manager."], // lo que hice en el proyecto
             creditos: ["Juan David Gonzalez", "Lina Alejandra Reina", "Gustavo Adolfo Parra", "Juan David Bustos"]
         }
 
@@ -58,6 +63,7 @@ const PROYECTOS = [
       descripcion: "Tras un deslizamiento de tierra en la ribera del río, dos pequeñas nutrias mellizas quedan atrapadas en las ruinas de una antigua caverna. El lugar está envuelto en una oscuridad casi total, pero las paredes emiten extrañas señales luminosas que solo ellas pueden interpretar, aunque de forma fragmentada.",
       tema: "Señales",
       mecanica: "La mecanica principal del juego gira entorno a encontrar señales ocultas por diferentes tipos de visiones, señales en paredes, pisos y señales invisibles segun la visión que se active.",
+      aporte: ["Programé las mecánicas y el gameplay: movimiento, trampas e interacciones.", "Integré la interfaz en Unity.", "Armé los niveles con los assets del equipo."], // lo que hice en el proyecto
       creditos: ["Juan David Gonzalez", "Mariana Hernandez", "Angie Fonseca"]
     },
     en: {
@@ -66,6 +72,7 @@ const PROYECTOS = [
       descripcion: "After a landslide on the riverbank, two young twin otters get trapped in the ruins of an ancient cave. The place is wrapped in near-total darkness, but the walls give off strange glowing signals that only they can interpret, though only in fragments.",
       tema: "Signals",
       mecanica: "The core mechanic is finding signals hidden by different kinds of vision: signals on walls, on floors and invisible signals, depending on which vision is active.",
+      aporte: ["Programmed the mechanics and gameplay: movement, traps and interactions.", "Integrated the interface in Unity.", "Built the levels with the team's assets."], // lo que hice en el proyecto
       creditos: ["Juan David Gonzalez", "Mariana Hernandez", "Angie Fonseca"]
         }
 
@@ -87,7 +94,7 @@ const TXT = {
     edu: "Educación", eduList: [["Desarrollador Unity", "Generation", "Sep - Dic 2026"], ["Desarrollo de videojuegos y entornos interactivos", "SENA", "11/2024 - 08/2026"]],
     skills: "Conocimientos", skillList: ["C#", "Scripting", "Control de versiones", "Diseño de niveles", "QA Tester", "Modelado 3D"], soft: "Software",
     projects: "Mis proyectos", filter: "Filtro", all: "Todos", none: "No hay proyectos con este filtro.", tip: "Ir a detalles",
-    back: "Volver a proyectos", theme: "Tema", credits: "Créditos", site: "Ir al sitio", notFound: "Proyecto no encontrado.",
+    back: "Volver a proyectos", role: "Mi aporte", theme: "Tema", credits: "Créditos", site: "Ir al sitio", notFound: "Proyecto no encontrado.",
     contact: "Contáctame", mail: "Correo", prev: "Sección anterior", next: "Sección siguiente"
   },
   en: {
@@ -98,7 +105,7 @@ const TXT = {
     edu: "Education", eduList: [["Unity Developer", "Generation", "Sep - Dec 2026"], ["Video Game and Interactive Environments Development", "SENA", "11/2024 - 08/2026"]],
     skills: "Skills", skillList: ["C#", "Scripting", "Version control", "Level design", "QA Tester", "3D modeling"], soft: "Software",
     projects: "My projects", filter: "Filter", all: "All", none: "No projects match this filter.", tip: "View details",
-    back: "Back to projects", theme: "Theme", credits: "Credits", site: "Go to site", notFound: "Project not found.",
+    back: "Back to projects", role: "My role", theme: "Theme", credits: "Credits", site: "Go to site", notFound: "Project not found.",
     contact: "Contact me", mail: "Email", prev: "Previous section", next: "Next section"
   }
 };
@@ -174,6 +181,7 @@ const vistas = {
       <img src="${p.imagen}" alt="${d.titulo}">
       <div class="txt">
         <p>${d.descripcion}</p>
+        ${d.aporte ? `<div class="aporte"><h3>${t().role}</h3><ul>${li(d.aporte)}</ul></div>` : ""}
         <p>${t().theme}: ${d.tema}<br>${d.mecanica}<br>${t().credits}</p>
         <ul>${li(d.creditos)}</ul>
         <div class="tags">${tags(p.tags, "fill")}</div>
